@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Садовый участок</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<a href="index.html" style="display: block;">
+				<img id="logo" src="images/logo.svg">
+				<h1 id="title">Садовый участок</h1>
+			</a>
+			<input type="checkbox" id="menu-button">
+			<img src="images/menu-bars.svg">
+			<img src="images/menu-cross.svg">
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="signup.html">Регистрация</a></li>
+					<li><a href="signin.html">Войти</a></li>
+					<li><a href="about.html">О нас</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<main>
+				<h1>Регистрация</h1>
+				<form method="post" name="signupform">
+					<label>
+						Имя<br>
+						<input required type="text" name="name" pattern="\D*">
+					</label>
+					<br>
+					<label>
+						Фамилия<br>
+						<input required type="text" name="surname" pattern="\D*">
+					</label>
+					<br>
+					<label>
+						Дата и время рождения<br>
+						<input type="datetime-local" min="1900-00-00" max="9999-29-12">
+					</label>
+					<br>
+					<label>
+						Номер телефона<br>
+						<input type="tel" placeholder="11 цифр" pattern="\d{11}">
+					</label>
+					<fieldset>
+						<legend>
+							Пол
+						</legend>
+						<label>
+							<input type="radio" name="gender" value="male" required>
+							Мужской
+						</label>
+						<br>
+						<label>
+							<input type="radio" name="gender" value="female">
+							Женский
+						</label>
+					</fieldset>
+					<label>
+						Адрес электронной почты<br>
+						<input required type="email" name="email">
+					</label>
+					<br>
+					<label>
+						Пароль<br>
+						<input required minlength="8" type="password" name="password">
+					</label>
+					<br>
+					<label>
+						Фото для вашего аккаунта<br>
+						<input type="file" name="image">
+					</label>
+					<br>
+					<label>
+						Расскажите о себе<br>
+						<textarea placeholder="Кратко о себе" rows="15" cols="100" minlength="10" maxlength="1000"></textarea>
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" checked name="receive" value="true">
+						Подписаться на рассылку по электронной почте
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="agreement" value="true" required>
+						Я принимаю с лицензионное соглашение
+					</label>
+					<br>
+					<input type="submit" value="Зарегистрироваться">
+				</form>
+			</main>
+		</div>
+		<!--нижняя панель-->
+		<footer>
+			<address>
+				<h2>Контактная информация</h2>
+				<a href="tel:89151234567">Телефон</a><br>
+				<a href="mailto:contact@forgarden.ru">Почта</a>
+				<div>Лиджиев Денис Леонидович</div>
+				<div>ИКБО-20-22</div>
+			</address>
+		</footer>
+	</body>
+</html>

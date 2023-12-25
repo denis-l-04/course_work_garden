@@ -1,0 +1,16 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<radialGradient id="skingrad" cx="0" cy="0.5" r="0.7">
+			<stop offset="0%" stop-color="#fb4" />
+			<stop offset="100%" stop-color="#f55" />
+		</radialGradient>
+		<linearGradient id="leafgrad" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#50FE00" />
+			<stop offset="100%" stop-color="#46C232" />
+		</linearGradient>
+	</defs>
+	<path d="M 74.981 437.019 A 256 256 0 0 0 437.019 74.981 Z" fill="#fc4"/>
+	<path d="M 165.49 346.51 A 128 128 0 0 0 346.51 165.49 Z" fill="#C01C28"/>
+	<path d="M 74.981 437.019 A 256 256 0 0 1 437.019 74.981 Z" fill="url(#skingrad)"/>
+	<path d="M 74.981 74.981 A 256 256 0 0 1 437.019 74.981 A 256 256 0 0 1 74.981 74.981" fill="url(#leafgrad)"/>
+</svg>

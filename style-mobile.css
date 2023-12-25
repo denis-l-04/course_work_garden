@@ -1,0 +1,91 @@
+/* header ====================================================================*/
+#menu-button {
+	display: inline;
+	position: fixed;
+	top: 1vh;
+	right: 2vw;
+	width: 7vw;
+	height: 7vw;
+	opacity: 0;
+	z-index: 20;
+	margin: 0;
+}
+#menu-button + img {
+	position: fixed;
+	top: 1vh;
+	right: 2vw;
+	width: 7vw;
+	z-index: 19;
+}
+#menu-button + img + img{
+	display: none;
+	position: fixed;
+	top: 1vh;
+	right: 2vw;
+	width: 7vw;
+	z-index: 19;
+}
+#menu-button:checked + img {
+	display: none;
+}
+#menu-button:checked + img + img{
+	display: inline;
+}
+#menu-button ~ nav{
+	display: none;
+}
+#menu-button:checked ~ nav{
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 18;
+}
+header>nav {
+	z-index: 8;
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	font-size: 10vh;
+}
+header > nav > ul > li {
+	text-align: center;
+}
+/*settings ===================================================================*/
+#settings {
+	display: none;
+	box-shadow: 0 2vmin 3vmin 0vmin black;
+}
+#settings-open:checked ~ #settings {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 50vw;
+	height: 15vh;
+}
+
+#settings-open {
+	display: inline;
+	position: fixed;
+	top: 1vh;
+	right: 10vw;
+	width: 7vw;
+	height: 7vw;
+	opacity: 0;
+	z-index: 10;
+	margin: 0;
+}
+#settings-open + img {
+	display: inline;
+	position: fixed;
+	top: 1vh;
+	right: 10vw;
+	width: 7vw;
+	height: 7vw;
+	z-index: 9;
+}
+/* main ======================================================================*/
+main {
+	min-height: 68vh;
+}
